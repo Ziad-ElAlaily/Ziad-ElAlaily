@@ -1,0 +1,76 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050816"/>
+      <stop offset="0.48" stop-color="#101A3C"/>
+      <stop offset="1" stop-color="#16072D"/>
+    </linearGradient>
+    <linearGradient id="line" x1="140" y1="100" x2="1050" y2="290" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00E5FF"/>
+      <stop offset="0.5" stop-color="#7C4DFF"/>
+      <stop offset="1" stop-color="#FF3CAC"/>
+    </linearGradient>
+    <radialGradient id="orb1">
+      <stop stop-color="#00E5FF" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#00E5FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2">
+      <stop stop-color="#FF3CAC" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#FF3CAC" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" fill="none" stroke="#7C9CFF" stroke-opacity=".12" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="360" rx="30" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="30" fill="url(#grid)"/>
+
+  <circle cx="100" cy="50" r="180" fill="url(#orb1)" opacity=".28">
+    <animate attributeName="r" values="160;210;160" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1110" cy="310" r="190" fill="url(#orb2)" opacity=".28">
+    <animate attributeName="r" values="180;230;180" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <path d="M100 286 C290 220 340 320 520 236 C720 143 790 266 1090 115" stroke="url(#line)" stroke-width="3" stroke-linecap="round" opacity=".75" filter="url(#glow)">
+    <animate attributeName="stroke-dasharray" values="1 18;18 8;1 18" dur="5s" repeatCount="indefinite"/>
+  </path>
+
+  <g opacity=".78">
+    <circle cx="168" cy="264" r="6" fill="#00E5FF" filter="url(#glow)"/>
+    <circle cx="384" cy="280" r="6" fill="#7C4DFF" filter="url(#glow)"/>
+    <circle cx="610" cy="211" r="6" fill="#9D5CFF" filter="url(#glow)"/>
+    <circle cx="830" cy="218" r="6" fill="#D04DFF" filter="url(#glow)"/>
+    <circle cx="1045" cy="137" r="6" fill="#FF3CAC" filter="url(#glow)"/>
+  </g>
+
+  <text x="75" y="115" fill="#AAB9E8" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="6">
+    AI ENGINEERING • ARCHITECTURE • LEADERSHIP
+  </text>
+
+  <text x="72" y="198" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">
+    ZIAD EL-ALAILY
+  </text>
+
+  <text x="76" y="244" fill="url(#line)" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">
+    Building intelligent systems that scale.
+  </text>
+
+  <rect x="76" y="287" width="255" height="38" rx="19" fill="#071024" stroke="#00E5FF" stroke-opacity=".6"/>
+  <text x="203.5" y="312" fill="#D8F9FF" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">
+    CAIRO • EGYPT • GLOBAL
+  </text>
+
+  <g transform="translate(1015,52)">
+    <circle cx="52" cy="52" r="52" fill="#0B1430" stroke="url(#line)" stroke-width="3"/>
+    <path d="M30 67 L52 28 L74 67 M39 53 H65" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
